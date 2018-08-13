@@ -13,4 +13,6 @@ sudo apt-get install libmotif-dev libxpm-dev libxerces-c-dev libgdal-dev libtiff
 
 3) you need to create an empty projects folder, or point to a valid projects folder via environment variable...
 
+4) There is a share.h file missing. I created this file and included share_linux.h. If you compile on windows you probably have to include share_windows.h.
+
 
