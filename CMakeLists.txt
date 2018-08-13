@@ -1,0 +1,42 @@
+cmake_minimum_required(VERSION 2.8)
+
+project(GAIT_27)
+INCLUDE_DIRECTORIES(/usr/include)
+LINK_DIRECTORIES(/usr/lib)
+add_executable(${PROJECT_NAME} "GAIT 26 Source/interface.c" "GAIT 26 Source/interface3.c"
+    "GAIT 26 Source/TTformat.c" "GAIT 26 Source/extract.main.c" "GAIT 26 Source/interface4.c"
+    "GAIT 26 Source/errors.c" "GAIT 26 Source/TT.c"  "GAIT 26 Source/parse_xml.cpp"
+    "GAIT 26 Source/gifd_functionality.c" "GAIT 26 Source/interface2.c" "GAIT 26 Source/SEEIT_API.c"
+    "GAIT 26 Source/utilities.c" "GAIT 26 Source/shape_import.c" "GAIT 26 Source/LiteClue.c"
+    "GAIT 26 Source/Handle.c" "GAIT 26 Source/attr_decsl.c"
+    "GAIT 26 Source/mgcp3_class.c" "GAIT 26 Source/mgcp3_attr.c" "GAIT 26 Source/mgcp3_enum.c"
+    "GAIT 26 Source/fldb_class.c" "GAIT 26 Source/fldb_attr.c" "GAIT 26 Source/fldb_enum.c" "GAIT 26 Source/fldb_nunanpo_enum.c"
+    "GAIT 26 Source/tds4_class.c" "GAIT 26 Source/tds4_attr.c" "GAIT 26 Source/tds4_enum.c"
+    "GAIT 26 Source/tds_illegals.c"
+    "GAIT 26 Source/d4_class.c" "GAIT 26 Source/d4_attr.c" "GAIT 26 Source/d4_enum.c" "GAIT 26 Source/d4_nunanpo_enum.c"
+    "GAIT 26 Source/vmap_class.c" "GAIT 26 Source/vmap_attr.c" "GAIT 26 Source/vmap_enum.c" "GAIT 26 Source/vmap_nunanpo_enum.c"
+    "GAIT 26 Source/mgcp4_class.c" "GAIT 26 Source/mgcp4_attr.c" "GAIT 26 Source/mgcp4_enum.c"
+    "GAIT 26 Source/mgcp_illegals.c"
+    "GAIT 26 Source/ufd1_class.c" "GAIT 26 Source/ufd1_attr.c" "GAIT 26 Source/ufd1_enum.c" "GAIT 26 Source/ufd1_nunanpo_enum.c"
+    "GAIT 26 Source/ufd2_class.c" "GAIT 26 Source/ufd2_attr.c" "GAIT 26 Source/ufd2_enum.c" "GAIT 26 Source/ufd2_nunanpo_enum.c"
+    "GAIT 26 Source/ufd3_class.c" "GAIT 26 Source/ufd3_attr.c" "GAIT 26 Source/ufd3_enum.c" "GAIT 26 Source/ufd3_nunanpo_enum.c"
+    "GAIT 26 Source/nfdd_class.c" "GAIT 26 Source/nfdd_attr.c" "GAIT 26 Source/nfdd_enum.c" "GAIT 26 Source/nfdd_nunanpo_enum.c"
+    "GAIT 26 Source/dfdd_class.c" "GAIT 26 Source/dfdd_attr.c" "GAIT 26 Source/dfdd_enum.c" "GAIT 26 Source/dfdd_nunanpo_enum.c"
+    "GAIT 26 Source/sac_class.c" "GAIT 26 Source/sac_attr.c" "GAIT 26 Source/sac_enum.c"
+    "GAIT 26 Source/tds6_class.c" "GAIT 26 Source/tds6_attr.c" "GAIT 26 Source/tds6_enum.c"
+    "GAIT 26 Source/ggdm21_class.c" "GAIT 26 Source/ggdm21_attr.c" "GAIT 26 Source/ggdm21_enum.c"
+    "GAIT 26 Source/ggdm22_u_class.c" "GAIT 26 Source/ggdm22_u_attr.c" "GAIT 26 Source/ggdm22_u_enum.c"
+    "GAIT 26 Source/ggdm3_class.c" "GAIT 26 Source/ggdm3_attr.c" "GAIT 26 Source/ggdm3_enum.c" "GAIT 26 Source/ggdm3_nunanpo_enum.c"
+    "GAIT 26 Source/dbfopen.c"
+    "GAIT 26 Source/import_geotiff.cpp"
+    "GAIT 26 Source/dted_import.c"
+    "GAIT 26 Source/interface5.c"
+    "GAIT 26 Source/moregeomchecks.c"
+    "GAIT 26 Source/IsTrigraph.c"
+    "GAIT 26 Source/gait_logo.c"
+    "GAIT 26 Source/interface4.c"
+    "GAIT 26 Source/geomchecks.c"
+    "GAIT 26 Source/shape_import.c" "GAIT 26 Source/shpopen.c"
+    "GAIT 26 Source/Markup.cpp"
+    )
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} "Xm" "Xt"  "X11" "m" "xerces-c" "geotiff" "tiff" "Xpm" "gdal")
