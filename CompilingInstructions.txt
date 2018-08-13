@@ -1,0 +1,16 @@
+Instructions for debian based Linux
+
+If you have a 64-Bit Linux, use the 32 Bit libraries!!
+
+sudo apt-get update
+sudo apt-get install build-essential
+
+You will need 
+1) some additional libraries:
+sudo apt-get install libmotif-dev libxpm-dev libxerces-c-dev libgdal-dev libtiff5-dev libgeotiff
+
+2) Files and folders from an old Installation, like the "bin" folder etc...
+
+3) you need to create an empty projects folder, or point to a valid projects folder via environment variable...
+
+
